@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonView">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSecondTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:title="@string/app_name"
+        tools:ignore="MissingClass,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/secondScreenTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_title_margin_top"
+        android:text="@string/card_view_tile"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSecondTB" />
+
+    <LinearLayout
+        android:id="@+id/outputPictureLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/layouts_margin_horizontal"
+        android:layout_marginTop="@dimen/card_title_margin_top"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/secondScreenTitle">
+
+        <ImageView
+            android:id="@+id/outputIconIV"
+            android:layout_width="@dimen/output_icon_size"
+            android:layout_height="@dimen/output_icon_size"
+            android:src="@drawable/baseline_tag_faces_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/outputNameLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/layouts_output_margin_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/outputPictureLL">
+
+        <TextView
+            android:id="@+id/outputNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="имя-заглушка"
+            android:textSize="@dimen/output_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/outputLastNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="фамилия-заглушка"
+            android:textSize="@dimen/output_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/outputAgeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Возраст: 50"
+            android:textSize="@dimen/output_age_text_size" />
+
+        <TextView
+            android:id="@+id/outputBeforeBirthdayTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="До дня рождения 15 дней"
+            android:textSize="@dimen/output_before_birthday_text_size"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

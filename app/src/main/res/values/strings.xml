@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">КАРТОЧКА ДАННЫХ</string>
+    <string name="card_view_tile">Данные пользователя</string>
+    <string name="card_input_tile">Ввод даных</string>
+    <string name="input_name_title">Имя:</string>
+    <string name="input_name_hint">Имя</string>
+    <string name="input_lastname_title">Фамилия:</string>
+    <string name="input_lastname_hint">Фамилия</string>
+    <string name="input_date_of_birth_title">Дата рождения:</string>
+    <string name="input_day_of_birth_title">день</string>
+    <string name="input_day_of_birth_hint">31</string>
+    <string name="input_month_of_birth_title">месяц</string>
+    <string-array name="input_month_of_birth_list">
+        <item>января</item>
+        <item>февраля</item>
+        <item>марта</item>
+        <item>апреля</item>
+        <item>мая</item>
+        <item>июня</item>
+        <item>июля</item>
+        <item>августа</item>
+        <item>сентября</item>
+        <item>октября</item>
+        <item>ноября</item>
+        <item>декабря</item>
+    </string-array>
+    <string name="input_month_of_birth_hint">имя</string>
+    <string name="input_year_of_birth_title">год</string>
+    <string name="input_year_of_birth_hint">1999</string>
+    <string name="save_card_button_text">СОХРАНИТЬ</string>
+    <string name="error_null">Какое-то из полей не заполнено</string>
+    <string name="error_not_pict">Изображение не выбрано</string>
+    <string name="error_bad_day">Неверное число месяца</string>
+    <string name="error_bad_year">Неверно указан год</string>
+    <string name="error_blank_date_or_year">Не указана дата или год</string>
+    <string name="error_bad_name_or_lastname">Водите имя и фамилию верно</string>
+</resources>

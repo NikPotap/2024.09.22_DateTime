@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMainTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:title="@string/app_name"
+        tools:ignore="MissingClass,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/firstScreenTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_title_margin_top"
+        android:text="@string/card_input_tile"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMainTB" />
+
+    <LinearLayout
+        android:id="@+id/inputNameLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/layouts_margin_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/firstScreenTitle">
+
+        <TextView
+            android:id="@+id/inputNameTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_name_title"
+            android:textSize="@dimen/input_title_text_size" />
+
+        <EditText
+            android:id="@+id/inputNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_name_margin"
+            android:autofillHints="name"
+            android:hint="@string/input_name_hint"
+            android:inputType="textCapWords"
+            android:textSize="@dimen/input_hint_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inputLastnameLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/layouts_margin_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/inputNameLL">
+
+        <TextView
+            android:id="@+id/inputLastnameTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_lastname_title"
+            android:textSize="@dimen/input_title_text_size" />
+
+        <EditText
+            android:id="@+id/inputLastnameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_name_margin"
+            android:autofillHints="name"
+            android:hint="@string/input_lastname_hint"
+            android:inputType="textCapWords"
+            android:textSize="@dimen/input_hint_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inputDateOfBirthTitleLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/layouts_margin_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/inputLastnameLL">
+
+        <TextView
+            android:id="@+id/dateOfBirthTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_date_of_birth_title"
+            android:textSize="@dimen/input_title_text_size" />
+
+        <EditText
+            android:id="@+id/inputDayOfBirthET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_name_margin"
+            android:hint="@string/input_day_of_birth_hint"
+            android:inputType="number"
+            android:textSize="@dimen/input_hint_text_size" />
+
+        <Spinner
+            android:id="@+id/inputMonthOfBirthSPN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/input_month_of_birth_list"
+            android:textSize="@dimen/input_hint_text_size" />
+
+        <EditText
+            android:id="@+id/inputYearOfBirthET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_year_of_birth_hint"
+            android:inputType="number"
+            android:textSize="@dimen/input_hint_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inputPictureLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/layouts_margin_horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/inputDateOfBirthTitleLL">
+
+        <ImageView
+            android:id="@+id/inputIconIV"
+            android:layout_width="@dimen/input_icon_size"
+            android:layout_height="@dimen/input_icon_size"
+            android:src="@drawable/baseline_tag_faces_24"
+            android:tag="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonSaveLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/layouts_margin_horizontal"
+        android:layout_marginTop="@dimen/button_margine_top"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/inputPictureLL">
+
+        <Button
+            android:id="@+id/saveItemBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_card_button_text" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

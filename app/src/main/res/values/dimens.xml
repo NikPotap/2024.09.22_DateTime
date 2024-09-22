@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_title_margin_top">20dp</dimen>
+    <dimen name="input_title_text_size">16sp</dimen>
+    <dimen name="input_hint_text_size">22sp</dimen>
+    <dimen name="input_name_margin">5dp</dimen>
+    <dimen name="layouts_margin_horizontal">10dp</dimen>
+    <dimen name="layouts_output_margin_horizontal">20dp</dimen>
+    <dimen name="input_icon_size">150dp</dimen>
+    <dimen name="output_icon_size">250dp</dimen>
+    <dimen name="button_margine_top">20dp</dimen>
+    <dimen name="output_text_size">24sp</dimen>
+    <dimen name="output_age_text_size">20sp</dimen>
+    <dimen name="output_before_birthday_text_size">16sp</dimen>
+</resources>
